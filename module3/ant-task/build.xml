@@ -1,0 +1,41 @@
+<project name="TestProject" default="jar">
+
+  <property name="src" location="src" />
+  <property name="build" location="build" />
+  <property name="dist"  location="dist"/>
+  <property name="test"  location="test/com/test"/>
+  
+  <tstamp>
+	<format property="TD" pattern="MM.dd.yyyy-HH:mm:ss" />
+  </tstamp>
+
+ <!-- <artifact name="testart" type="jar" /> -->
+
+  <target name="clean">
+    <delete dir="${build}" failonerror="false"/>
+    <delete dir="${dist}" failonerror="false"/>
+  </target>
+
+  <target name="init" depends="clean">
+    <mkdir dir="${build}"/>
+    <echo message="now: ${TD}"/>	
+  </target>
+ 
+  <target name="compile" depends="init" >
+    <javac srcdir="${src}" destdir="${build}">
+	<classpath location="lib/commons-collections-3.2.1.jar"/>
+    </javac>
+  </target>
+
+ <!-- <target name="test" depends="compile">
+	<java fork="true" classname="${test}/UnitTest.class"/>
+	
+  </target> -->
+
+  <target name="jar" depends="compile" >
+    <mkdir dir="${dist}"/>
+    <jar jarfile="${dist}/${TD}.jar" basedir="${build}"/>
+  </target>
+ 
+
+</project>
