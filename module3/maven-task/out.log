@@ -1,0 +1,64 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for art:tstArt:jar:1.0
+[WARNING] 'dependencies.dependency.systemPath' for lib:commons_collections:jar should use a variable instead of a hard-coded path /usr/local/maven/mtn-projects/module3/ant-task/lib/commons-collections-3.2.1.jar @ line 19, column 18
+[WARNING] 'dependencies.dependency.systemPath' for lib:junit:jar should use a variable instead of a hard-coded path /usr/local/maven/mtn-projects/module3/ant-task/lib/junit-4.11.jar @ line 26, column 18
+[WARNING] 'dependencies.dependency.systemPath' for lib:hamcrest:jar should use a variable instead of a hard-coded path /usr/local/maven/mtn-projects/module3/ant-task/lib/hamcrest-core-1.3.jar @ line 33, column 18
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building maven-task 1.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ tstArt ---
+[INFO] Deleting /usr/local/maven/mtn-projects/module3/maven-task/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ tstArt ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ tstArt ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 1 source file to /usr/local/maven/mtn-projects/module3/maven-task/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ tstArt ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /usr/local/maven/mtn-projects/module3/maven-task/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ tstArt ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 1 source file to /usr/local/maven/mtn-projects/module3/maven-task/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ tstArt ---
+[INFO] Surefire report directory: /usr/local/maven/mtn-projects/module3/maven-task/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.test.UnitTest
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ tstArt ---
+[INFO] Building jar: /usr/local/maven/mtn-projects/module3/maven-task/target/tstArt-1.0.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ tstArt ---
+[INFO] Installing /usr/local/maven/mtn-projects/module3/maven-task/target/tstArt-1.0.jar to /root/.m2/repository/art/tstArt/1.0/tstArt-1.0.jar
+[INFO] Installing /usr/local/maven/mtn-projects/module3/maven-task/pom.xml to /root/.m2/repository/art/tstArt/1.0/tstArt-1.0.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.922 s
+[INFO] Finished at: 2015-08-17T14:06:35+03:00
+[INFO] Final Memory: 14M/126M
+[INFO] ------------------------------------------------------------------------
