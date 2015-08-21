@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-mtn-projects
-============
-
-Projects for MTN 2013 summer lab
-=======
 helloworld: Helloworld Example
 ===============================
 Author: Pete Muir  
@@ -83,4 +77,3 @@ If you want to debug the source code of any library in the project, run the foll
 
         mvn dependency:sources
 
->>>>>>> 41f3fabf954c920dbe09015be4a846403aabbbfe
